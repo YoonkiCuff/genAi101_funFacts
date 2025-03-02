@@ -1,1 +1,4 @@
 # genAi101_funFacts
+The Pasta Fun Fact Generator is an engaging web application that utilizes Generative AI to deliver interesting and educational facts about pasta. Built using HTML, CSS, and JavaScript, this app features a user-friendly interface where users can click a button to receive a random pasta fact. The design incorporates a visually appealing background image, enhancing the overall user experience. 
+
+By leveraging AI-generated content, the app not only entertains but also educates users about the rich history, variety, and cultural significance of pasta. The application is hosted on GitHub Pages, making it easily accessible for anyone interested in exploring the delightful world of pasta. This project exemplifies the power of AI in creating interactive and informative applications, showcasing how technology can enhance our understanding of culinary traditions.
