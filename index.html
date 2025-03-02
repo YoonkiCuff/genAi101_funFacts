@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts About Pasta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('pasta.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            height: 100vh; /* Full height of the viewport */
+            display: flex; /* Use flexbox to center the container */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d2691e; /* Chocolate color */
+        }
+
+        button {
+            background-color: #d2691e; /* Chocolate color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c65d2e; /* Darker chocolate color */
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Facts About Pasta</h1>
+        <button id="factButton">Get a Random Fact</button>
+        <p id="factDisplay"></p>
+    </div>
+    <script>
+        const facts = [
+            "Pasta is believed to have originated in China over 4,000 years ago, although it became popular in Italy in the 12th century.",
+            "There are over 600 different shapes of pasta, each designed to hold sauce differently. Common shapes include spaghetti, penne, fusilli, and farfalle.",
+            "The average Italian consumes about 60 pounds of pasta per year, which is significantly higher than the global average.",
+            "The term 'al dente' means 'to the tooth' in Italian, referring to pasta that is cooked until it is firm to the bite.",
+            "Different types of pasta are traditionally paired with specific sauces. For example, long pasta like spaghetti is often served with lighter sauces, while short pasta like penne is great for thicker sauces.",
+            "In 2006, astronauts on the International Space Station enjoyed a special pasta meal, demonstrating that even in space, pasta is a beloved food.",
+            "Italy hosts numerous pasta festivals throughout the year, celebrating the country's rich pasta heritage with tastings, cooking demonstrations, and competitions.",
+            "The names of pasta shapes often reflect their appearance or origin. For example, 'farfalle' means 'butterflies' in Italian, and the shape resembles the insect.",
+            "Whole grain and legume-based pastas are becoming increasingly popular as healthier alternatives, providing more fiber and protein compared to traditional pasta.",
+            "Pasta has inspired various forms of art, including sculptures and jewelry, showcasing its cultural significance beyond just being a food item."
+        ];
+
+        document.getElementById('factButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('factDisplay').innerText = facts[randomIndex];
+        });
+    </script>
+</body>
+</html>
